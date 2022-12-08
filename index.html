@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DACKHOA portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c5f98b8837.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Abilities</a></li>
+                    <li><a href="#portfolio">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Đắc Khoa</span><br>Falcuty of IT from HCMUS</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------about ------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>
+                        I am studying and working at the Faculty of Information Technology, University of Natural Sciences. 
+                        In-depth training in programming and related issues. With a spirit of curiosity and a desire to challenge yourself. Join many clubs at school and hone many soft skills.
+I look forward to participating in internship programs to gain more experience and job opportunities.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web front-end</li>
+                            <li><span>Machine learning</span><br>Clustering & Classification. </li>
+                            <li><span>Data mining</span><br>Predictive analysis </li>
+                            <li><span>DSA</span><br>Data Structue, Design and Analysis of Algorithms</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2020-2022</span><br>Teaching C++ at CFD engineer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2013-2017</span><br>Trường THCS Trần Quốc Toản</li>
+                            <li><span>2017-2020</span><br>Chuyên toán - Trường THPT Chuyên Lương Văn Chánh</li>
+                            <li><span>2020-2024</span><br>VNUHCM - University of Science</br>Present-GPA: 8.31/10</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------service------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Abilities</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-stack-overflow"></i>
+                    <h2>Web design</h2>
+                    <p>Creates basic websites and applications using web languages such as HTML, CSS, 
+                        and JavaScript that allow users to access and interact with the site or app.
+                        But this is not my direction of development, i prefer AI in computer science</p>
+                    <br>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-git-alt"></i>
+                    <h2>Machine Learning</h2>
+                    <p>Get a general overview of Machine Learning topics such as supervised vs unsupervised learning,
+                         and the usage of each algorithm.
+                         Also, i understand the advantage of using Python libraries for implementing Machine Learning models.</p>
+                    <br>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Teaching</h2>
+                    <p>Good pedagogical skills with the ability to transfer knowledge; I can teach basic
+                         programming knowledge of c++, such as DSA or OOP,
+                          or a basic understanding of data with python.</p>
+                    <br>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-------portfolio------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Project</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>AMAZING RACE</h3>
+                        <p>It is  a game of bets based on random, lucky characters and spells for players to place and try their luck. 
+                            There is a login page and account registration.
+                             In the game, players will have no money and must play minigames to earn money.
+                             The character who finishes first will jump to celebrate the victory.
+                              The losing characters will lie on the ground and cry—ranking the results table after the race.
+                               On the track, gift boxes are randomly containing charms; each charm has a special effect.
+                        </p>
+                        <a href="https://github.com/TranDacKhoa" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>COVID19_LOOKUP</h3>
+                        <p>In this project, the server will save the World's Covid data, 
+                            and the client will be allowed Look up Covid information by 
+                            day for countries and territories worldwide. Use libraries such as Socket, Threading, and Tkinter, ... to communicate and exchange information between client and server
+                        </p>
+                        <a href="https://github.com/TranDacKhoa" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Classification with Python</h3>
+                        <p>use the classification algorithms to create a model based on our training data and evaluate our testing data using evaluation metrics, use some of the algorithms: Linear Regression, KNN, Decision Trees, ... and evaluate our models using: Accuracy Score, Jaccard Index, F1-Score, ...
+                            
+                        </p>
+                        <a href="https://github.com/TranDacKhoa" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-----------------contact------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fas fa-paper-plane"></i>prodranek007@gmail.com</p>
+                    <p><i class="fa fa-phone-square-alt"></i>0989494304</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/noicesmoker0127" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/Khoac16" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/noicesmoker0127/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/khoa-trần-51957a179/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/TranDacKhoa" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1UMwb6jxF_6RD-7tOLiEF1n3yW75TfQJq/view?usp=sharing" class="btn btn2" target="_blank">Dowload CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa-solid fa-copyright"></i>Copyright NoiceSmoker0127. Made by DacKhoa</p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sideenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sideenu.style.right = "0";
+        }
+        function closemenu() {
+            sideenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwFg92q9LAOqhEvBgUnOcujlRnAyqSb93vtlGFBnwqEq3PM54XkuMtxhWF-9JScGUCShg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Form sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+</body>
+
+</html>
